@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>la radio Newton</title>
+        <link rel="stylesheet" href="radio.css">
+    </head>
+    <body>
+        <div class="primaparte">
+        <h2>Radio Newton</h2>
+        <p>La radio del liceo <em>"Isacco Newton"</em></p>
+        <img src="immagini/radioN5.png" id="icona">
+        <p>Clicca sulla radio per avviare l'ascolto</p>
+        </div>
+        <audio id="musica">
+            <source src="immagini/song.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var musica = document.getElementById("musica")
+            var icona = document.getElementById("icona")
+
+            icona.onclick = function (){
+                if(musica.paused){
+                    musica.play();
+                    icona.src = "immagini/radioN6.png";   
+                }else{
+                    musica.pause();
+                    icona.src = "immagini/radioN5.png";
+                }
+            }
+        </script>
+        <!---<div class ="barra-navigazione">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CHI SIAMO</a></li>
+                <li><a href="#">CONTATTI</a></li>
+                <li><a href="#">SOCIAL</a></li>
+            </ul>
+
+        </div>
+        <--->
+    </body>
+</html>

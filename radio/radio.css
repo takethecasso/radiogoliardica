@@ -1,0 +1,30 @@
+.primaparte {
+    text-align: center;
+    font-size: 20px;
+}
+
+.barra-navigazione {
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-navigazione ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.barra-navigazione ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+
+#icona {
+    cursor: pointer;
+}
